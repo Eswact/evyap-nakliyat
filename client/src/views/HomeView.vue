@@ -29,35 +29,63 @@
     </div>
     <div class="w-full relative sm:p-4 bg-main-light dark:bg-main-shadow flex flex-col justify-center items-center bg-main/20">
       <div class="bottomWave top-[-10px] mainWave h-[10px]"></div>
-      <div class="w-full max-w-[1600px] flex justify-between items-center">
+      <div class="w-full max-w-[1600px] p-4 flex justify-between items-center">
         <div class="w-[45%] p-[50px] xl:p-[40px] lg:hidden">
           <img class="fade-in w-full" loading="lazy" src="/uploads/services.png" alt="Evyap Nakliyat Hizmetleri">
         </div>
-        <div class="w-[50%] lg:w-full flex justify-center items-center">
-          <div class="fade-in w-[75%] sm:w-full bg-white flex flex-col gap-[32px] justify-start items-start p-[50px] xl:p-[30px] border rounded-lg shadow-xl">
-            <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
-              <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Asonsörlü Taşıma</span>
+        <div class="w-[55%] lg:w-full lg:p-8 md:p-2 sm:p-0 flex justify-center items-center">
+          <div class="fade-in w-full bg-white flex lg:justify-between lg:items-center md:flex-col md:gap-4 gap-6 justify-start items-start p-10 xl:p-8 sm:p-6 border rounded-lg shadow-xl">
+            <div class="flex flex-col gap-12 md:gap-4 md:w-full md:justify-center justify-start items-start">
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Asonsörlü Taşıma</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Eşya Paketleme</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Eşya Depolama</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Şehirler Arası Ofis Taşımacılığı</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Şehirler Arası Nakliyat</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Kurumsal Taşımacılık</span>
+              </div>
             </div>
-            <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
-              <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Eşya Paketleme</span>
-            </div>
-            <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
-              <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Eşya Depolama</span>
-            </div>
-            <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
-              <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Şehirler arası ofis taşımacılığı</span>
-            </div>
-            <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
-              <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Şehirler arası nakliyat</span>
-            </div>
-            <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
-              <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Kurumsal Taşımacılık</span>
+            <div class="flex flex-col gap-12 md:gap-4 md:w-full md:justify-center justify-start items-start">
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Moda Evden Eve Nakliye</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Villa Taşıma Nakliyesi</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Banka Taşıma</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Mağaza Taşıma</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Askılı Tekstil Taşıma</span>
+              </div>
+              <div class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+                <font-awesome-icon icon="fa-solid fa-circle-check"  class="text-3xl text-green-600"/>
+                <span class="text-text font-semibold text-[1.2rem] xl:text-[1rem]">Ofis Taşımna Büro Nakliyesi</span>
+              </div>
             </div>
           </div>
         </div>

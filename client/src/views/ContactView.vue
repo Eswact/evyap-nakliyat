@@ -47,7 +47,7 @@
             <div class="w-full flex flex-wrap justify-around items-center md:items-start md:justify-start gap-[20px]">
                 <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
                     <div class="text-[2rem] md:text-[1.5rem] p-[16px] md:p-[10px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
-                        <font-awesome-icon class="w-[30px] flex justify-center items-center" icon="fa-solid fa-phone" />
+                        <font-awesome-icon class="min-w-[30px] flex justify-center items-center" icon="fa-solid fa-phone" />
                     </div>
                     <div class="flex flex-col gap-1 text-[1.1rem] xl:text-base max-w-[300px] md:max-w-full sm:pt-[7px]">
                         <span class="w-full flex justify-between gap-4"><span class="font-semibold">Ataşehir :</span>0216 573 71 34</span> 
@@ -57,15 +57,19 @@
                 </div>
                 <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
                     <div class="text-[2rem] md:text-[1.5rem] p-[16px] md:p-[10px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
-                        <font-awesome-icon class="w-[30px] flex justify-center items-center" icon="fa-solid fa-envelope" />
+                        <font-awesome-icon class="min-w-[30px] flex justify-center items-center" icon="fa-solid fa-envelope" />
                     </div>
-                    <span class="text-[1.5rem] xl:text-[1.25rem] max-w-[300px] md:max-w-full sm:pt-[7px]">info@evyapnakliyat.com</span>
+                    <div class="flex items-center">
+                        <span class="text-[1.5rem] xl:text-[1.25rem] md:text-[1.1rem] max-w-[300px] sm:pt-[7px]">info@evyapnakliyat.com</span>
+                    </div>  
                 </div>
                 <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
                     <div class="text-[2rem] md:text-[1.5rem] p-[16px] md:p-[10px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
-                        <font-awesome-icon class="w-[30px] flex justify-center items-center" icon="fa-solid fa-location-dot" />
+                        <font-awesome-icon class="min-w-[30px] flex justify-center items-center" icon="fa-solid fa-location-dot" />
                     </div>
-                    <span class="text-[1.25rem] max-w-[300px] md:max-w-full sm:pt-[7px]">Gedikpaşa sok. Gedik İş merkezi Ataşehir / İstanbul</span>
+                    <div class="flex items-center">
+                        <span class="text-[1.25rem] md:text-[1.1rem] max-w-[300px] sm:pt-[7px]">Gedikpaşa sok. Gedik İş merkezi Ataşehir / İstanbul</span>
+                    </div>  
                 </div>
             </div>
             <div class="w-full flex items-center justify-between lg:flex-col-reverse gap-[30px]">

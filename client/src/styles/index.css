@@ -10,3 +10,28 @@
         @apply bg-dark transition-all duration-200;
     }
 }
+
+@layer utilities {
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-bg rounded-sm;
+    }
+    .dark ::-webkit-scrollbar-track {
+        @apply bg-dark rounded-sm;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-main rounded-sm;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+        @apply bg-bg rounded-sm;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-second;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+        @apply bg-main;
+    }
+}

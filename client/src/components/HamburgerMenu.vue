@@ -22,13 +22,11 @@
                 <img class="h-16 dark:hidden" loading="lazy" src="/uploads/evyap-logo.svg" alt="Evyap Nakliyat">
                 <img class="h-16 hidden dark:block" loading="lazy" src="/uploads/evyap-logo.svg" alt="Evyap Nakliyat">
             </RouterLink>
-            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/about') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/about"><span class="text-[1.4rem] font-semibold">Hakkımızda</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/"><span class="text-[1.4rem] font-semibold">Anasayfa</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/services') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/services"><span class="text-[1.4rem] font-semibold">Hizmetlerimiz</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/about') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/about"><span class="text-[1.4rem] font-semibold">Hakkımızda</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/contact') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/contact"><span class="text-[1.4rem] font-semibold">İletişim</span></RouterLink>
         </nav>
-        <!-- buttons -->
-        <div class="flex gap-[20px] py-[20px]">
-            <!-- <a href="https://demo.tamsoft.com.tr/" target="_blank" class="gelatine text-[1.2rem] font-semibold border-[1px] border-main text-main shadow-sm shadow-main-shadow py-[8px] text-center w-[104px] rounded-md dark:text-white dark:border-white">{{ $t('login') }}</a> -->
-            <!-- <a class="gelatine text-[1.2rem] font-semibold border-[1px] border-main bg-main text-white shadow-md shadow-main-shadow py-[8px] text-center w-[104px] rounded-md dark:border-white">{{ $t('signup') }}</a> -->
-        </div>
     </div>
 </template>
 

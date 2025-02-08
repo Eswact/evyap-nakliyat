@@ -15,6 +15,26 @@ const router = createRouter({
       }
     },
     {
+      path: '/services',
+      name: 'services',
+      component: () => import('../views/ServicesView.vue'),
+      meta: {
+        title: "Evyap - Hizmetlerimiz",
+        description: "Evyap Nakliyat Hizmetlerimiz.",
+        keywords: "Hizmetlerimiz, Asonsörlü Taşıma, Eşya Paketleme, Eşya Depolama, Şehirler Arası Ofis Taşımacılığı, Kurumsal Taşımacılık, Moda Evden Eve Naklie, Villa Taşıma Nakliyesi, Banka Taşıma, Mağaza Taşıma, Askılı Tekstil Taşıma, Ofis Taşımna Büro Nakliyesi"
+      }
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue'),
+      meta: {
+        title: "Evyap - Hakkımızda",
+        description: "Evyap Nakliyat Hakkımızda.",
+        keywords: "Hakkımızda, Biz, Vizyon, Misyon"
+      }
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
@@ -35,6 +55,14 @@ const router = createRouter({
       }
     }
   ],
+
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  },
 });
 
 router.beforeEach((to, from, next) => {
