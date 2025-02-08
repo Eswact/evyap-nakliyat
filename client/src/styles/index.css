@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply font-montserrat bg-bg;
+    }
+    .dark body {
+        @apply bg-dark transition-all duration-200;
+    }
+}

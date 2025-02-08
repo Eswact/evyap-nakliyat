@@ -1,0 +1,103 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+html, body {
+    height: 100%;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* long texts */
+.threeDots {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+}
+.truncatedText2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+/* animations */
+@keyframes fadeInSlideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 64px 0;
+    }
+}
+
+@keyframes gelatine {
+    0%, 100% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+.gelatine:hover {
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: gelatine 0.5s 1;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% {
+        box-shadow: 0 0 10px 4px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 15px 8px rgba(37, 211, 102, 0.6);
+    }
+}
+.whatsapp-logo {
+    animation: pulse-whatsapp 1.5s infinite;
+}
