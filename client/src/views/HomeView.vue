@@ -15,9 +15,9 @@
           <div class="flex flex-col justify-start items-start lg:justify-center lg:items-center gap-8 xl:gap-10 px-6 xl:px-5">
             <h1 class="text-[2.75rem] 2xl:text-3lx xl:text-2xl lg:text-center text-third dark:text-white font-bold whitespace-nowrap">Evyap Evden Eve Nakliyat</h1>
             <p class="text-2xl 2xl:text-xl xl:text-lg font-bold text-main dark:text-third underline">Asansörlü Taşıma Kaskolu Evden Eve Nakliyat Şirketi</p>
-            <div class="flex flex-col gap-4 text-sm dark:text-bg">
-              <p class="text-justify font-semibold">Evyap Ataşehir evden eve nakliyat eşya depolama firması en uygun Sigortalı Ev Eşyası depolama ve taşıma işi yapmaktadır. Ataşehir nakliyat A.Ş. olarak evden eve teslim, depo depolama ve asansörlü servis hizmetleri de vermekteyiz. Sektördeki köklü geçmişimiz ile sizin için yetenekli bir grup oluşturduk.</p>
-              <p class="text-justify font-semibold">Ataşehir asansörlü taşıma EVYAP Ataşehir asansör taşımacılığı hizmeti olarak bizi seçtiğinizde şehir içi nakliye o kadar da zorlu ve problemli olmadığını fark edeceksiniz. Yetenekli ekibimiz, kaliteli malzememiz ve son teknolojinin gerektirdiği ekipmanlarımız ile sizlere yardımcı oluyoruz.</p>
+            <div class="flex flex-col gap-4 dark:text-bg">
+              <p class="text-justify">Evyap Ataşehir evden eve nakliyat eşya depolama firması en uygun Sigortalı Ev Eşyası depolama ve taşıma işi yapmaktadır. Ataşehir nakliyat A.Ş. olarak evden eve teslim, depo depolama ve asansörlü servis hizmetleri de vermekteyiz. Sektördeki köklü geçmişimiz ile sizin için yetenekli bir grup oluşturduk.</p>
+              <p class="text-justify">Ataşehir asansörlü taşıma EVYAP Ataşehir asansör taşımacılığı hizmeti olarak bizi seçtiğinizde şehir içi nakliye o kadar da zorlu ve problemli olmadığını fark edeceksiniz. Yetenekli ekibimiz, kaliteli malzememiz ve son teknolojinin gerektirdiği ekipmanlarımız ile sizlere yardımcı oluyoruz.</p>
             </div>
             <button @click="navigateToContact" class="text-xl font-bold px-4 py-3 rounded-lg bg-main text-white shadow-lg shadow-main/20 hover:bg-second hover:text-white duration-200">Hemen iletişime Geçin</button>
           </div>
