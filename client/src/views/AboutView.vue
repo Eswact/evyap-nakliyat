@@ -21,7 +21,7 @@ useFadeIn();
             <img class="absolute bottom-0 right-0 lg:relative lg:w-full lg:h-full w-[400px] h-[400px] object-cover rounded-lg" loading="lazy" src="/uploads/aboutUs.jpg" alt="About Us">
           </div>
       </div>
-      <!-- statistics -->
+      <!-- Statistics -->
       <div class="fade-in w-full p-[20px] flex flex-col justify-center items-center gap-[20px]">
         <div class="relative md:flex-wrap md:gap-[20px] md:h-auto w-full max-w-[1100px] h-[120px] px-[40px] py-[20px] flex justify-around items-center border-[2px] border-main-shadow rounded-xl dark:bg-main/20 shadow-lg overflow-hidden">
           <div class="topWave h-[40px]"></div>

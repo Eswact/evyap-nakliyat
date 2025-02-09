@@ -42,7 +42,7 @@ onMounted(() => {
       <Header />
     </header>
     <!-- main -->
-    <main :class="{ 'mt-[110px] md:mt-[80px]': !isNotFound }" class="z-10 w-full dark:text-white">
+    <main :class="{ 'mt-[110px] md:mt-[80px]': !isNotFound }" class="w-full dark:text-white">
       <RouterView />
     </main>
     <!-- footer -->

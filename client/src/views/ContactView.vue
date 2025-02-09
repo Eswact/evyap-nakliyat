@@ -1,10 +1,13 @@
 <script setup>
+    import { ref } from 'vue';
     import { toast } from 'vue3-toastify';
+    import axios from 'axios';
 
+    const isLoading = ref(false);
     const isEmpty = (value) => {
         return value === '' || value === null || value === undefined;
     }
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         if (isEmpty(document.getElementById('formName').value) || 
             isEmpty(document.getElementById('formMail').value) || 
             isEmpty(document.getElementById('formMessage').value)) {
@@ -16,24 +19,26 @@
             email: document.getElementById('formMail').value,
             message: document.getElementById('formMessage').value,
         };
-        const onSuccess = (res) => {
+        try {
+            isLoading.value = true;
+            const response = await axios.post('http://localhost:3761/send-mail', data);
             document.getElementById('formName').value = '';
             document.getElementById('formMail').value = '';
             document.getElementById('formMessage').value = '';
-            toast(t('toastMessages.contactForm.success'), { autoClose: 3000, type: "success", position: "bottom-right" });
-        };
-        const onError = (err) => {
-            console.warn(err);
-            toast($t('toastMessages.contactForm.error'), { autoClose: 3000, type: "error", position: "bottom-right" });
-        };
-        AjaxScripts.SendMail({data, onSuccess, onError});
+            toast("Mail gönderildi!", { autoClose: 3000, type: "success", position: "bottom-right" });
+        } catch (error) {
+            toast("Mail gönderilemedi!", { autoClose: 3000, type: "error", position: "bottom-right" });
+            console.warn(error);
+        } finally {
+            isLoading.value = false;
+        }
     }
 </script>
 
 <template>
     <div class="w-full flex flex-col justify-center items-center gap-[16px]">
         <!-- contact image -->
-        <div class="w-full h-[304px] grid place-items-center bg-[#575456] shadow-lg shadow-[rgba(0,0,0,0.37)]">
+        <div class="z-0 w-full h-[304px] grid place-items-center bg-[#575456] shadow-lg shadow-[rgba(0,0,0,0.37)]">
             <div
                 class="relative flex justify-center items-center w-full max-w-[1600px] h-[304px] before:absolute before:inset-0 before:right-auto before:pointer-events-none before:w-20 before:bg-gradient-to-r before:from-[#575456] before:to-[#57545600] before:z-20 after:absolute after:inset-0 after:left-auto after:pointer-events-none after:w-20 after:bg-gradient-to-l after:from-[#575456] after:to-[#57545600] after:z-20 2xl:before:w-0 2xl:after:w-0">
                 <img class="w-full h-full object-cover object-bottom"
@@ -89,7 +94,7 @@
                         <div class="flex flex-col items-start justify-start gap-[2px]">
                             <textarea class="w-full h-[240px] max-h-[320px] min-h-[100px] overflow-y-auto border-[2px] px-[20px] py-[10px] bg-[#FAF9F9] rounded-md border-main-shadow shadow-md shadow-main-light placeholder:text-[#AAA0A2] text-[1.15rem]" name="formMessage" id="formMessage" placeholder="Mesajınız" required></textarea>
                         </div>
-                        <button type="submit" class="py-[6px] rounded-md border border-main bg-main text-white text-[1.4rem] font-semibold shadow-lg shadow-main-shadow duration-200 hover:bg-main-light hover:text-main">Gönder</button>
+                        <button type="submit" class="py-[6px] rounded-md bg-main text-white text-[1.4rem] font-semibold shadow-lg shadow-main-shadow duration-200 hover:bg-main-light hover:bg-second">Gönder</button>
                     </form>
                 </div>
                 <!-- address image -->
@@ -106,6 +111,11 @@
             <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" href=""><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 
             <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" href=""><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
             <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" href=""><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
+        </div>
+
+        <!-- splash -->
+        <div v-if="isLoading" class="z-50 fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black/70">
+            <img class="max-w-full max-h-full" loading="lazy" src="/uploads/loading.gif" alt="Loading">
         </div>
     </div>
 </template>
