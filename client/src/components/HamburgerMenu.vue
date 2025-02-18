@@ -23,9 +23,9 @@
                 <img class="h-16 hidden dark:block" loading="lazy" src="/uploads/evyap-logo.svg" alt="Evyap Nakliyat">
             </RouterLink>
             <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/"><span class="text-[1.4rem] font-semibold">Anasayfa</span></RouterLink>
-            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/services') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/services"><span class="text-[1.4rem] font-semibold">Hizmetlerimiz</span></RouterLink>
-            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/about') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/about"><span class="text-[1.4rem] font-semibold">Hakkımızda</span></RouterLink>
-            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/contact') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/contact"><span class="text-[1.4rem] font-semibold">İletişim</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/hizmetler') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/services"><span class="text-[1.4rem] font-semibold">Hizmetlerimiz</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/hakkinda') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/about"><span class="text-[1.4rem] font-semibold">Hakkımızda</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-third': isActive('/iletisim') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/contact"><span class="text-[1.4rem] font-semibold">İletişim</span></RouterLink>
         </nav>
     </div>
 </template>

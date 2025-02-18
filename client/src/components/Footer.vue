@@ -22,9 +22,9 @@
                         <h3 class="text-[1.5rem] font-bold 2xl:text-[1.25rem] md:text-[1.5rem]">Diğer Sayfalar</h3>
                         <ul class="flex flex-col gap-[6px] text-[1.2rem] 2xl:text-[1rem] md:text-[1.2rem] font-semibold px-[6px]">
                             <li class="hover:text-main duration-200"><a href="/">Anasayfa</a></li>
-                            <li class="hover:text-main duration-200"><a href="/services">Hizmetlerimiz</a></li>
-                            <li class="hover:text-main duration-200"><a href="/about">Hakkımızda</a></li>
-                            <li class="hover:text-main duration-200"><a href="/contact">İletişim</a></li>
+                            <li class="hover:text-main duration-200"><a href="/hizmetler">Hizmetlerimiz</a></li>
+                            <li class="hover:text-main duration-200"><a href="/hakkinda">Hakkımızda</a></li>
+                            <li class="hover:text-main duration-200"><a href="/iletisim">İletişim</a></li>
                         </ul>
                     </div>
                     <div class="flex flex-col gap-[24px]">

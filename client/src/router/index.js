@@ -6,42 +6,42 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'anasayfa',
       component: () => import('../views/HomeView.vue'),
       meta: {
-        title: "Evyap - Anasayfa",
+        title: "Evden Eve Nakliyat | Profesyonel Taşımacılık Hizmetleri",
         description: "Evyap Nakliyat web sayfasına hoşgeldiniz.",
-        keywords: "Anasayfa, Nakliyat, Ev, Taşımacılık"
+        keywords: "Evden Eve Nakliyat, Şehirler Arası Taşımacılık, Sigortalı Nakliyat, Profesyonel Taşıma"
       }
     },
     {
-      path: '/services',
-      name: 'services',
+      path: '/hizmetler',
+      name: 'hizmetler',
       component: () => import('../views/ServicesView.vue'),
       meta: {
         title: "Evyap - Hizmetlerimiz",
         description: "Evyap Nakliyat Hizmetlerimiz.",
-        keywords: "Hizmetlerimiz, Asonsörlü Taşıma, Eşya Paketleme, Eşya Depolama, Şehirler Arası Ofis Taşımacılığı, Kurumsal Taşımacılık, Moda Evden Eve Naklie, Villa Taşıma Nakliyesi, Banka Taşıma, Mağaza Taşıma, Askılı Tekstil Taşıma, Ofis Taşımna Büro Nakliyesi"
+        keywords: "Hizmetlerimiz, Asonsörlü Taşıma, Eşya Paketleme, Eşya Depolama, Şehirler Arası Ofis Taşımacılığı, Kurumsal Taşımacılık, Moda Evden Eve Naklie, Villa Taşıma Nakliyesi, Banka Taşıma, Mağaza Taşıma, Askılı Tekstil Taşıma, Ofis Taşıma Büro Nakliyesi,İstanbul Evden Eve Nakliyat,Ataşehir Evden Eve Nakliyat,"
       }
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/hakkinda',
+      name: 'hakkinda',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        title: "Evyap - Hakkımızda",
+        title: "Hakkımızda | Evypa Nakliyat Firması",
         description: "Evyap Nakliyat Hakkımızda.",
-        keywords: "Hakkımızda, Biz, Vizyon, Misyon"
+        keywords: "Nakliyat Firması, Güvenilir Nakliyat, Taşımacılık Şirketi, Evden Eve Nakliye, Hakkımızda, Biz, Vizyon, Misyon"
       }
     },
     {
-      path: '/contact',
-      name: 'contact',
+      path: '/iletisim',
+      name: 'iletisim',
       component: () => import('../views/ContactView.vue'),
       meta: {
         title: "Evyap - İletişim",
         description: "Bizimle iletişime geçin.",
-        keywords: "İletişim, Telefon, E-posta, Adres, Nakliyat"
+        keywords: "Nakliyat İletişim, Ev Taşıma Telefon, Nakliye Adres, Destek Hattı, İletişim, Telefon, E-posta, Adres, Nakliyat"
       }
     },
     {
@@ -51,7 +51,7 @@ const router = createRouter({
       meta: {
         title: "Evyap - 404",
         description: "Aradığınız sayfa bulunamadı.",
-        keywords: "404, Sayfa bulunamadı, Evyap, Nakliyat"
+        keywords: "404 Hata, Sayfa Bulunamadı, Nakliyat Hizmetleri, Ev Taşıma"
       }
     }
   ],
