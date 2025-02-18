@@ -58,6 +58,8 @@
                         <span class="w-full flex justify-between gap-4"><span class="font-semibold">Ataşehir :</span>0216 573 71 34</span> 
                         <span class="w-full flex justify-between gap-4"><span class="font-semibold">Feneryolu :</span>0216 347 99 04</span> 
                         <span class="w-full flex justify-between gap-4"><span class="font-semibold">Mecidiyeköy :</span>0212 288 71 12</span>
+                        <span class="w-full flex justify-between gap-4"><span class="font-semibold">GSM 1 :</span>0532 275 70 36</span>
+                        <span class="w-full flex justify-between gap-4"><span class="font-semibold">GSM 2 :</span>0532 472 05 90</span>
                     </div>
                 </div>
                 <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
@@ -65,7 +67,7 @@
                         <font-awesome-icon class="min-w-[30px] flex justify-center items-center" icon="fa-solid fa-envelope" />
                     </div>
                     <div class="flex items-center">
-                        <span class="text-[1.5rem] xl:text-[1.25rem] md:text-[1.1rem] max-w-[300px] sm:pt-[7px]">info@evyapnakliyat.com</span>
+                        <span class="text-[1.5rem] xl:text-[1.25rem] md:text-[1.1rem] max-w-[300px] sm:pt-[7px]">evyapnakliyat@gmail.com</span>
                     </div>  
                 </div>
                 <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
@@ -73,7 +75,7 @@
                         <font-awesome-icon class="min-w-[30px] flex justify-center items-center" icon="fa-solid fa-location-dot" />
                     </div>
                     <div class="flex items-center">
-                        <span class="text-[1.25rem] md:text-[1.1rem] max-w-[300px] sm:pt-[7px]">Gedikpaşa sok. Gedik İş merkezi Ataşehir / İstanbul</span>
+                        <span class="text-[1.25rem] md:text-[1.1rem] max-w-[300px] sm:pt-[7px]">Gedikpaşa Sok. Gedik İş Merkezi Ataşehir / İstanbul</span>
                     </div>  
                 </div>
             </div>

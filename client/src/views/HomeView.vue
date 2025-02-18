@@ -4,7 +4,7 @@
     useFadeIn();
 
     const router = useRouter();
-    const navigateToContact = () => router.push('/contact');
+    const navigateToContact = () => router.push('/iletisim');
 </script>
 
 <template>
